@@ -14,7 +14,24 @@
   };
   firebase.initializeApp(config);
 </script>
-<script src='main.js'></script>
+<script src='bundle.js'></script>
 </head>
 <body>
+  <div id='templates'>
+    <li class='fact'>
+      <div class='id'> {{id}}</div>
+      <div class='question'> {{question}} </div>
+      <div class='answer'> {{answer}} </div>
+      <div class='how-well'> How well did you know this </div>
+  </div>
+  <ul id='factList'>
+
+  </ul>
+  <div id='newFact'>
+    <input id='question' type='text'>
+    <input id='answer' type='text'>
+    <button id='submitFact'>Create</button>
+  </div>
 </body>
+
+
